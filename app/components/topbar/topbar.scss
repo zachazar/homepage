@@ -1,5 +1,19 @@
 @import '../../styling/variables.scss';
 
-#wrapper-navbar .navbar-nav .active a{
-  background-color: $color-background;
+
+#navbar-collapse{
+  .topbar{
+    
+    &__header{
+      font-size: $font-normal;
+    }
+
+    &__links{
+      font-size: $font-normal;
+      & .active a{
+        background-color: $color-background;
+      }
+
+    }
+  }
 }
