@@ -1,3 +1,5 @@
+import './resume.scss';
+
 export default class ResumeCtrl{
   constructor(ResumeDataService){
     this.ResumeDataService = ResumeDataService;

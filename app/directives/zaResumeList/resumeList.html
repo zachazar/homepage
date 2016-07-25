@@ -1,6 +1,6 @@
 <section ng-if="resumeList.eduList.length">
   <h3>Education</h3>
-  <ul class="resume__list">
+  <ul class="resumeList__list">
     <li ng-repeat="key in resumeList.eduList">
       <za-resume-tile type="item.type" data="resumeList.data[key]"></za-resume-tile>
     </li>
@@ -8,7 +8,7 @@
 </section>
 <section ng-if="resumeList.workList.length">
   <h3>Work Experience</h3>
-  <ul class="resume__list">
+  <ul class="resumeList__list">
     <li ng-repeat="key in resumeList.workList">
       <za-resume-tile type="item.type" data="resumeList.data[key]"></za-resume-tile>
     </li>
@@ -16,7 +16,7 @@
 </section>
 <section ng-if="resumeList.projectList.length">
   <h3>Projects</h3>
-  <ul class="resume__list">
+  <ul class="resumeList__list">
     <li ng-repeat="key in resumeList.projectList">
       <za-resume-tile type="item.type" data="resumeList.data[key]"></za-resume-tile>
     </li>

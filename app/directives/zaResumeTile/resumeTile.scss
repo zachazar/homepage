@@ -1,9 +1,10 @@
 @import '../../styling/variables.scss';
 
 .resumeTile{
+  cursor: pointer;
   background-color: $color-tile;
   border-radius: $border-radius;
-  margin: 10px;
+  margin: 20px 10px;
   padding: 20px;
   min-height: 100px;
 
@@ -19,22 +20,38 @@
       float: right;
     }
   }
+  &__skills__list{
+    list-style: none;
+    
+    & li{
+      display: inline-block;
+      margin: 5px;
+      padding: 2px;
+      background-color: $color-skill;
+      color: white;
+    }
+  }
 
   &__info {
-    padding-left: 1.5em;
-    
+    padding-left: 1em;
+    & p {
+      margin-bottom: 0;
+    }
+
     &__thesis{
-      & p {
-        margin-bottom: 0;
-      }
+      
 
       &__title{
         font-style: italic;
       }
 
       &__description{
-        padding-left: 1.5em;
+        padding-left: 1em;
       }
+    }
+    &__responsibilities{
+      list-style: initial;
+      padding-left: 0;
     }
   }
   

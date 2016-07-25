@@ -8,12 +8,22 @@
     <span class="resumeTile__subheader__duration" ng-bind="resumeTile.tile.duration"></span>
     <span class="resumeTile__subheader__location" ng-bind="resumeTile.tile.location"></span>
   </p>
+  <div class="resumeTile__skills hidden-lg hidden-md"> 
+    <ul ng-if="resumeTile.tile.skills" class="resumeTile__skills__list">
+      <li ng-repeat="skill in resumeTile.tile.skills" ng-bind="skill.name"></li>
+    </ul>
+  </div>
   <div class="resumeTile__info">
+    <!-- EDU -->
     <div class="resumeTile__info__thesis" ng-if="resumeTile.tile.thesis">
       <p>Thesis: <span class="resumeTile__info__thesis__title" ng-bind="resumeTile.tile.thesis.title"></span></p>
       <p class="resumeTile__info__thesis__description" ng-bind="resumeTile.tile.thesis.description"></p>
     </div>
     <p class="resumeTile__info__minors" ng-bind="resumeTile.tile.minors"></p>
     <p class="resumeTile__info__honors" ng-bind="resumeTile.tile.honors"></p>
+    <!-- Work -->
+    <ul ng-if="resumeTile.tile.responsibilities" class="resumeTile__info__responsibilities">
+      <li ng-repeat="resp in resumeTile.tile.responsibilities" ng-bind="resp"></li>
+    </ul>
   </div>
 </div>

@@ -10,16 +10,17 @@ export default class ResumeTileCtrl{
       org: null,
       duration: null,
       location: null,
-      thesis: null
+      thesis: null,
+      skills: this.data.skills
     };
-
+    
     //Decide on tile specifics based on tile type
     if (this.data.type==="edu"){
 
       //Basic Education Information
       this.tile.title = this.data.degree;
       this.tile.titleMinor = `GPA: ${this.data.gpa.cumulative}`;
-      this.tile.org = this.data.institution;
+      this.tile.org = this.data.organization;
       this.tile.duration = `(${this.data.duration.start} - ${this.data.duration.end})`;
       this.tile.location = this.data.location;
 
@@ -42,7 +43,15 @@ export default class ResumeTileCtrl{
       }
     }
     else if (this.data.type==="work"){
+      //Basic Work Information
+      this.tile.title = this.data.position;
+      this.tile.titleMinor = this.data.hours;
+      this.tile.org = this.data.organization;
+      this.tile.duration = `(${this.data.duration.start} - ${this.data.duration.end})`;
+      this.tile.location = this.data.location;
 
+      //Responsibilities
+      this.tile.responsibilities = this.data.responsibilities;
     }
     else{
       console.log("resumeTile: Type error");
