@@ -1,0 +1,14 @@
+{
+  "eqeqeq": true,
+  "curly": true,
+  "browser": true,
+  "indent": 2,
+  "esversion": 6,
+  "undef": true,
+  "unused": true,
+  "globals": {
+    "$": true,
+    "jQuery": true,
+    "console" : true 
+  }
+}
