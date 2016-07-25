@@ -1,7 +1,7 @@
 export default class ResumeTileCtrl{
   constructor($scope){
     this.$scope = $scope;
-
+    
     this.data = this.$scope.data;
 
     this.tile = {

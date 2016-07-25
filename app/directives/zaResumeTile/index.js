@@ -11,7 +11,8 @@ function resumeTile() {
     restrict: "E",
     scope: {
       type : '@',
-      data : '<'
+      data : '<',
+      active: '='
     },
     template: page,
     controller: ResumeTileCtrl,
