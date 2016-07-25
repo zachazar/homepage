@@ -1,0 +1,19 @@
+<div class="resumeTile">
+  <div class="resumeTile__title"> 
+    <p class="resumeTile__title__major" ng-bind="resumeTile.tile.title"></p>
+    <p class="resumeTile__title__minor" ng-bind="resumeTile.tile.titleMinor"></p>
+  </div>
+  <p class="resumeTile__subheader">
+    <span class="resumeTile__subheader__org" ng-bind="resumeTile.tile.org"></span>
+    <span class="resumeTile__subheader__duration" ng-bind="resumeTile.tile.duration"></span>
+    <span class="resumeTile__subheader__location" ng-bind="resumeTile.tile.location"></span>
+  </p>
+  <div class="resumeTile__info">
+    <div class="resumeTile__info__thesis" ng-if="resumeTile.tile.thesis">
+      <p>Thesis: <span class="resumeTile__info__thesis__title" ng-bind="resumeTile.tile.thesis.title"></span></p>
+      <p class="resumeTile__info__thesis__description" ng-bind="resumeTile.tile.thesis.description"></p>
+    </div>
+    <p class="resumeTile__info__minors" ng-bind="resumeTile.tile.minors"></p>
+    <p class="resumeTile__info__honors" ng-bind="resumeTile.tile.honors"></p>
+  </div>
+</div>

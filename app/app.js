@@ -16,6 +16,10 @@ import Config from './app.config';
 //Directives
 import resumeList from 'directives/zaResumeList';
 import skillTree from 'directives/zaSkillTree';
+import resumeTile from 'directives/zaResumeTile';
+
+//Services
+import resumeDataService from 'services/ResumeDataService';
 
 angular.module('homepage',[
                           //Config
@@ -24,8 +28,10 @@ angular.module('homepage',[
                           'ngAnimate', 
                           //Directives
                           resumeList,
-                          skillTree
-                          //Services
+                          skillTree,
+                          resumeTile,
+                          //Services,
+                          resumeDataService
                           ])
   .config(Config);
   

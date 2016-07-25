@@ -1,0 +1,41 @@
+@import '../../styling/variables.scss';
+
+.resumeTile{
+  background-color: $color-tile;
+  border-radius: $border-radius;
+  margin: 10px;
+  padding: 20px;
+  min-height: 100px;
+
+  &__title{
+    &__major{
+      display: inline-block;
+      font-size: $font-major;
+      font-weight: bold;
+    }
+
+    &__minor{
+      //display: inline-block;
+      float: right;
+    }
+  }
+
+  &__info {
+    padding-left: 1.5em;
+    
+    &__thesis{
+      & p {
+        margin-bottom: 0;
+      }
+
+      &__title{
+        font-style: italic;
+      }
+
+      &__description{
+        padding-left: 1.5em;
+      }
+    }
+  }
+  
+}
