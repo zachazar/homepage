@@ -13,7 +13,9 @@ import 'angular-animate';
 //Configuration
 import Config from './app.config';
 
-console.log("Launching app");
+//Directives
+import resumeList from 'directives/zaResumeList';
+import skillTree from 'directives/zaSkillTree';
 
 angular.module('homepage',[
                           //Config
@@ -21,9 +23,9 @@ angular.module('homepage',[
                           //ng
                           'ngAnimate', 
                           //Directives
-                          
+                          resumeList,
+                          skillTree
                           //Services
-                          
                           ])
   .config(Config);
   
