@@ -1,0 +1,19 @@
+@import '../../styling/variables.scss';
+
+.about{
+  &__item{
+    margin-bottom: 30px;
+  }
+  &__photo{
+    text-align: center;
+
+    @media screen and (min-width: $screen-md-min) {
+      text-align: left;
+    }
+
+    &__img{
+      width: 50%;
+    }
+  }
+
+}
