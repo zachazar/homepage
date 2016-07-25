@@ -1,0 +1,21 @@
+@import '../../styling/variables.scss';
+
+.footer {
+  background-color: $navColor;
+  padding: 10px;
+  border: 1px solid #e7e7e7;
+  border-width: 1px 0 0 0;
+
+  &__item{
+    margin: 10px 10px;
+  }
+
+  &__social a {
+    padding: 0 10px;
+    color: black;
+
+    &:hover, &:active, &:focus{
+      color: #337ab7;
+    }
+  }
+}

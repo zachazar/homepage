@@ -1,14 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html ng-app='homepage'>
   <head>
     <title>Zach Azar | Homepage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href='/bower_components/font-awesome/css/font-awesome.min.css' />
   </head>
   <body>
+    
+    <!-- Navbar -->
+    <div id="wrapper-navbar">
+      <div ui-view='topbar'></div>
+    </div>
+    
     <!-- Main Content -->
     <div id="wrapper-content">
-    <h1>Zach Azar's Homepage</h1>
+       <div ui-view='main' class="main container-fluid" ></div>
     </div><!-- /Main Content -->
+    
+    <!-- Footer -->
+    <div id="wrapper-footer">
+      <div ui-view='footer'></div>
+    </div>
     
     <!-- Source bundled app-->
     <script src='./app/build/bundle.js'></script>
