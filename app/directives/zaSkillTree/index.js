@@ -11,7 +11,8 @@ function skillTree() {
     restrict: "E",
     scope: {
       data : '<',
-      activeKey: '@'
+      active: '=',
+      skills: '<'
     },
     template: page,
     controller: SkillTreeCtrl,

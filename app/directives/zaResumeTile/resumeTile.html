@@ -1,19 +1,21 @@
-<div class="resumeTile" ng-class="{'active': active}" >
+<div data-toggle="collapse" data-target="{{'#resumeTile__info__' + resumeTile.tile.id}}" class="resumeTile" ng-class="{'active': active}" ng-mouseenter="resumeTile.ShowInfo(this)" ng-mouseleave="resumeTile.HideInfo(this)">
   <div class="resumeTile__title"> 
     <p class="resumeTile__title__major" ng-bind="resumeTile.tile.title"></p>
-    <p class="resumeTile__title__minor" ng-bind="resumeTile.tile.titleMinor"></p>
+    <p class="resumeTile__title__minor" ng-if="!resumeTile.tile.hasUrl" ng-bind="resumeTile.tile.titleMinor"></p>
+    <a class="resumeTile__title__minor" ng-href="{{resumeTile.tile.url}}" ng-if="resumeTile.tile.hasUrl">Github</a>
   </div>
   <p class="resumeTile__subheader">
+    <span class="resumeTile__subheader__project" ng-bind="resumeTile.tile.project"></span>
     <span class="resumeTile__subheader__org" ng-bind="resumeTile.tile.org"></span>
     <span class="resumeTile__subheader__duration" ng-bind="resumeTile.tile.duration"></span>
     <span class="resumeTile__subheader__location" ng-bind="resumeTile.tile.location"></span>
   </p>
-  <div class="resumeTile__skills hidden-lg hidden-md"> 
+  <div class="resumeTile__skills hidden-lg hidden-md hidden-sm"> 
     <ul ng-if="resumeTile.tile.skills" class="resumeTile__skills__list">
       <li ng-repeat="skill in resumeTile.tile.skills" ng-bind="skill.name"></li>
     </ul>
   </div>
-  <div class="resumeTile__info">
+  <div class="resumeTile__info collapse" id="{{'resumeTile__info__' + resumeTile.tile.id}}">
     <!-- EDU -->
     <div class="resumeTile__info__thesis" ng-if="resumeTile.tile.thesis">
       <p>Thesis: <span class="resumeTile__info__thesis__title" ng-bind="resumeTile.tile.thesis.title"></span></p>

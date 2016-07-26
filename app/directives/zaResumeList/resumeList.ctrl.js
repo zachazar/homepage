@@ -42,6 +42,7 @@ export default class ResumeListCtrl{
   //Change active to this active key
   Clicked(key){
     this.active = key;
+    this.$scope.activate({key});
   }
 }
 

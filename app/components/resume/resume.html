@@ -1,13 +1,13 @@
 <div class="container-fluid">
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-sm-6">
       <div class="resume__app">
-        <za-resume-list type="normal" width="'50'" data="resume.data"></resume-list>
+        <za-resume-list activate="resume.Activate(key)" type="normal" width="'50'" data="resume.data"></resume-list>
       </div>
     </div>
-    <div class="col-md-6">
+    <div class="col-sm-6">
       <div class="resume__app">
-        <za-skill-tree></za-skill-tree>
+        <za-skill-tree active="resume.active" data="resume.data" skills="resume.skills"></za-skill-tree>
       </div>
     </div>
   </div>

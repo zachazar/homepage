@@ -5,6 +5,7 @@ export default class ResumeTileCtrl{
     this.data = this.$scope.data;
 
     this.tile = {
+      id: null,
       title: null,
       titleMinor: null,
       org: null,
@@ -14,6 +15,8 @@ export default class ResumeTileCtrl{
       skills: this.data.skills
     };
     
+    this.tile.id = this.data.id;
+
     //Decide on tile specifics based on tile type
     if (this.data.type==="edu"){
 
@@ -53,9 +56,23 @@ export default class ResumeTileCtrl{
       //Responsibilities
       this.tile.responsibilities = this.data.responsibilities;
     }
+    else if (this.data.type==="project"){
+      this.tile.title = this.data.name;
+      this.tile.url = this.data.url;
+      this.tile.project = this.data.description;
+      this.tile.hasUrl = true;
+    }
     else{
       console.log("resumeTile: Type error");
     }
+  }
+
+  ShowInfo(a){
+    console.log("Show");
+    console.log(a);
+  }
+  HideInfo(){
+    console.log("Hide");
   }
 }
 

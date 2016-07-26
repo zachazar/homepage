@@ -11,7 +11,8 @@ function resumeList() {
     restrict: "E",
     scope: {
       type : '@',
-      data : '<'
+      data : '<',
+      activate: '&'
     },
     template: page,
     controller: ResumeListCtrl,
