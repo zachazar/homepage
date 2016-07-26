@@ -263,6 +263,53 @@ class ResumeDataService {
           38:{id:38,name:"Responsive Web Design",val:8},
           39:{id:39,name:"Model-View-Controller (MVC)",val:6},
         }
+      },
+      8: {
+        id : 6,
+        type: "work",
+        organization: "Institute for Software Integrated Systems",
+        location: "Nashville, TN",
+        position: "Undergraduate Research Assistant",
+        hours: "Full-time",
+        responsibilities:{
+          1: "Researched intelligent transportation and complex event processing",
+          2: "Developed a web server and practiced the rapid prototyping software life-cycle model"
+        },
+        duration:{
+          start: "May 2010",
+          end: "August 2010"
+        },
+        skills:{
+          10:{id:10,name:"HTML", val:4},
+          11:{id:11,name:"CSS", val:2},
+          12:{id:12,name:"JavaScript", val:3},
+          24:{id:24,name:"Command Line", val:2},
+          28:{id:28,name:"Java", val:5},
+          31:{id:31,name:"Unix", val:2},
+          40:{id:40,name:"Parallel and Distributed Computing", val:6},
+          44:{id:44,name:"Problem Solving and Critical Thinking", val:5}
+        }
+      },
+      9: {
+        id : 9,
+        type: "work",
+        organization: "Visible Light Solar Technologies",
+        location: "Albuquerque,NM",
+        position: "Student Intern",
+        hours: "Full-time",
+        responsibilities:{
+          1: "Designed firmware and software with C that created a user-interface for lighting profiles",
+          2: "Built solar panels and researched photovoltaic cell design",
+          3: "Tested and debugged software for microprocessor-based light control"
+        },
+        duration:{
+          start: "May 2009",
+          end: "August 2009"
+        },
+        skills:{
+          30:{id:30,name:"C/C++", val:4},
+          44:{id:44,name:"Problem Solving and Critical Thinking", val:6}
+        }
       }
     };
   }
