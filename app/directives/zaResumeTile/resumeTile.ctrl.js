@@ -66,14 +66,6 @@ export default class ResumeTileCtrl{
       console.log("resumeTile: Type error");
     }
   }
-
-  ShowInfo(a){
-    console.log("Show");
-    console.log(a);
-  }
-  HideInfo(){
-    console.log("Hide");
-  }
 }
 
 ResumeTileCtrl.$inject=["$scope"];

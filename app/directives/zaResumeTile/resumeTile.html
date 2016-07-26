@@ -1,4 +1,5 @@
-<div data-toggle="collapse" data-target="{{'#resumeTile__info__' + resumeTile.tile.id}}" class="resumeTile" ng-class="{'active': active}" ng-mouseenter="resumeTile.ShowInfo(this)" ng-mouseleave="resumeTile.HideInfo(this)">
+<div class="resumeTile" ng-class="{'active': active}" 
+  data-toggle="collapse" data-target="{{'#resumeTile__info__' + resumeTile.tile.id}}" aria-expanded="false" aria-controls="{{'resumeTile__info__' + resumeTile.tile.id}}">
   <div class="resumeTile__title"> 
     <p class="resumeTile__title__major" ng-bind="resumeTile.tile.title"></p>
     <p class="resumeTile__title__minor" ng-if="!resumeTile.tile.hasUrl" ng-bind="resumeTile.tile.titleMinor"></p>

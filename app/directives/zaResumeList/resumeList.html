@@ -1,7 +1,7 @@
 <section ng-repeat="section in resumeList.sections" ng-if="section.list.length">
-  <h3 ng-bind="section.name">Education</h3>
+  <p class="resumeList__title"ng-bind="section.name">Education</p>
   <ul class="resumeList__list">
-    <li ng-repeat="key in section.list" ng-mouseenter="resumeList.Clicked(key)">
+    <li ng-repeat="key in section.list" ng-click="resumeList.Clicked(key)">
       <za-resume-tile active="resumeList.active===key" type="item.type" data="resumeList.data[key]"></za-resume-tile>
     </li>
   </ul>

@@ -1,9 +1,12 @@
 @import '../../styling/variables.scss';
 
 
+.navbar-brand{
+  font-size: $font-major;
+}
+
 #navbar-collapse{
   .topbar{
-    
     &__header{
       font-size: $font-normal;
     }
@@ -11,6 +14,7 @@
     &__links{
       font-size: $font-normal;
       & .active a{
+        color: white;
         background-color: $color-background;
       }
 

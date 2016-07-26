@@ -1,4 +1,11 @@
-.resumeList__list{
-  list-style: none;
-  padding: 0;
+@import '../../styling/variables.scss';
+
+.resumeList{
+  &__list{
+    list-style: none;
+    padding: 0;
+  }
+  &__title{
+    font-size: $font-large;
+  }
 }

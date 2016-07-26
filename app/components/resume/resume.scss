@@ -3,7 +3,8 @@
 .resume__app{
   background-color: white;
   padding: 10px;
-
+  border-radius: $border-radius;
+  
   @media screen and (min-width: $screen-md-min) {
     height: 800px;
     overflow-y: scroll;

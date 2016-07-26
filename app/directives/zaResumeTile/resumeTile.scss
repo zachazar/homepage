@@ -7,17 +7,16 @@
   margin: 20px 10px;
   padding: 20px;
   min-height: 100px;
-  border: 2px $color-tile solid;
+  border: 4px $color-tile solid;
 
   &.active{
-    border: 2px $color-skill solid;
+    border: 4px $color-skill solid;
   }
   
   &__title{
     &__major{
       display: inline-block;
       font-size: $font-major;
-      font-weight: bold;
     }
 
     &__minor{
