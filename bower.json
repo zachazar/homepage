@@ -21,6 +21,8 @@
     "d3": "^4.1.1",
     "angular-ui-router": "^0.3.1",
     "angular-animate": "^1.5.8",
-    "font-awesome": "^4.6.3"
+    "font-awesome": "^4.6.3",
+    "please-wait": "^0.0.5",
+    "SpinKit": "spinkit#^1.2.5"
   }
 }

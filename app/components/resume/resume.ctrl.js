@@ -7,12 +7,9 @@ export default class ResumeCtrl{
     this.skills = this.ResumeDataService.GetAllSkills();
     
     this.active = null;
-    console.log("Retrieved data:");
-    console.log(this.data);
   }
 
   Activate(key){
-    console.log(key);
     this.active = key;
   }
 }
