@@ -11,12 +11,14 @@
     <span class="resumeTile__subheader__duration" ng-bind="resumeTile.tile.duration"></span>
     <span class="resumeTile__subheader__location" ng-bind="resumeTile.tile.location"></span>
   </p>
-  <div class="resumeTile__skills hidden-lg hidden-md hidden-sm"> 
-    <ul ng-if="resumeTile.tile.skills" class="resumeTile__skills__list">
-      <li ng-repeat="skill in resumeTile.tile.skills" ng-bind="skill.name"></li>
-    </ul>
-  </div>
+  
   <div class="resumeTile__info collapse" id="{{'resumeTile__info__' + resumeTile.tile.id}}">
+    <!-- Skills (on mobile)-->
+    <div class="resumeTile__skills hidden-lg hidden-md hidden-sm"> 
+      <ul ng-if="resumeTile.tile.skills" class="resumeTile__skills__list">
+        <li ng-repeat="skill in resumeTile.tile.skills" ng-bind="skill.name"></li>
+      </ul>
+    </div>
     <!-- EDU -->
     <div class="resumeTile__info__thesis" ng-if="resumeTile.tile.thesis">
       <p>Thesis: <span class="resumeTile__info__thesis__title" ng-bind="resumeTile.tile.thesis.title"></span></p>

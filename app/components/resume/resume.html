@@ -1,12 +1,14 @@
-<div class="row">
+<div class="row" za-resize-digest za-bind-to-width="resume.resumeWidth">
   <div class="col-sm-6">
     <div class="resume__app">
       <za-resume-list activate="resume.Activate(key)" type="normal" width="'50'" data="resume.data"></resume-list>
     </div>
   </div>
-  <div class="col-sm-6">
-    <div class="resume__app">
-      <za-skill-tree active="resume.active" data="resume.data" skills="resume.skills"></za-skill-tree>
+  <div class="col-sm-6" >
+    <div class="resume__app" ng-if="resume.resumeWidth >= 768">
+      <div za-bind-to-width="resume.skillTreeWidth">
+        <za-skill-tree active="resume.active" data="resume.data" skills="resume.skills" width="{{resume.skillTreeWidth}}"></za-skill-tree>
+      </div>
     </div>
   </div>
 </div>

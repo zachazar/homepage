@@ -94,9 +94,13 @@ export default class SkillTree{
        });
   }
 
-  Resize(){
-    ///TODO: make responsive
-    console.log("Resize");
+  Resize(width){
+    //Adjust width/height with margin
+    this.svgWidth = width;
+    this.width = width - (this.settings.margin.left + this.settings.margin.right);
+    this.svg
+      .attr("width",this.svgWidth);
+    this.Render(this.active);
   }
 
   //helpers ------------------------------------------

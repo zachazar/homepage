@@ -12,7 +12,8 @@ function skillTree() {
     scope: {
       data : '<',
       active: '=',
-      skills: '<'
+      skills: '<',
+      width: '@'
     },
     template: page,
     controller: SkillTreeCtrl,

@@ -17,6 +17,8 @@ import Config from './app.config';
 import resumeList from 'directives/zaResumeList';
 import skillTree from 'directives/zaSkillTree';
 import resumeTile from 'directives/zaResumeTile';
+import resizeDigest from 'directives/zaResizeDigest';
+import bindToWidth from 'directives/zaBindToWidth';
 
 //Services
 import resumeDataService from 'services/ResumeDataService';
@@ -30,6 +32,8 @@ angular.module('homepage',[
                           resumeList,
                           skillTree,
                           resumeTile,
+                          resizeDigest,
+                          bindToWidth,
                           //Services,
                           resumeDataService
                           ])

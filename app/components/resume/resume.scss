@@ -5,8 +5,22 @@
   padding: 10px;
   border-radius: $border-radius;
   
+  @media screen and (min-width: $screen-sm-min) {
+    height: 800px;
+    overflow-y: scroll;
+  }
+  
   @media screen and (min-width: $screen-md-min) {
     height: 800px;
+    overflow-y: scroll;
+  }
+
+  @media screen and (min-width: $screen-lg-min) {
+    height: 1200px;
+    overflow-y: scroll;
+  }
+  @media screen and (min-width: $screen-xl-min) {
+    height: 1440px;
     overflow-y: scroll;
   }
 }
