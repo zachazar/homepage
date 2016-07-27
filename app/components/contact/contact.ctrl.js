@@ -26,7 +26,7 @@ export default class ContactCtrl{
       },
       error: {
         statusClass: "bad",
-        statusMessage: "An error occurred. I'm sorry for the inconvenience. Please feel free to reach out to me on LinkedIn (profile link on bottom of page)"
+        statusMessage: "An error occurred. I&#39;m sorry for the inconvenience. Please feel free to reach out to me on LinkedIn (profile link on bottom of page)"
       }
     };
 

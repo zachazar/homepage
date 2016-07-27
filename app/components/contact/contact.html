@@ -1,6 +1,6 @@
 <div class="contact">
   <h1>Contact</h1>
-  <div class="contact__container" style="background-image:url({{contact.photo}})">
+  <div class="contact__container" style="background-image:url(.{{contact.photo}})">
     <div class="row">
       <div class="col-sm-6 contact__half"></div>
       <div class="col-sm-6 contact__half">
@@ -18,7 +18,7 @@
             <textarea id="contact_message" class="form-control" rows="3" required placeholder="Let's get to know each other" ng-model="contact.form.message"></textarea>
           </div>
           <div class="hidden form-group">
-            <label for="contact_nada">Do not fill out this field please. It's used for security purposes only and must be left blank for the form to function properly. Thanks!</label>
+            <label for="contact_nada">Do not fill out this field please. It&#39;s used for security purposes only and must be left blank for the form to function properly. Thanks!</label>
             <input type="input" class="form-control" id="contact_nada" ng-model="contact.form.honeyPot">
           </div>
           <button type="submit" class="btn btn-default">Submit</button>

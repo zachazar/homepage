@@ -6,8 +6,9 @@ module.exports = {
     './app/app.js'
   ],
   output: {
-    path: path.join(__dirname, 'app/build'),
+    path: path.join(__dirname, 'app/build/'),
     filename: 'bundle.js',
+    publicPath: "/app/build/"
   },
   resolve: {
     modulesDirectories: ['node_modules', 'bower_components', 'app'],
