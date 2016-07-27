@@ -4,20 +4,26 @@
     <div class="row">
       <div class="col-sm-6 contact__half"></div>
       <div class="col-sm-6 contact__half">
-        <form class="contact__container__form" >
+        <form class="contact__container__form" ng-submit="contact.SubmitForm()">
           <div class="form-group">
             <label for="contact_name">Name</label>
-            <input type="input" class="form-control" id="contact_name" placeholder="Name">
+            <input type="input" class="form-control" id="contact_name" required placeholder="Name" ng-model="contact.form.name">
           </div>
           <div class="form-group">
             <label for="contact_email">Email address</label>
-            <input type="email" class="form-control" id="contact_email" placeholder="Email">
+            <input type="email" class="form-control" id="contact_email" required placeholder="Email" ng-model="contact.form.email">
           </div>
           <div class="form-group">
             <label for="contact_message">Message</label>
-            <textarea id="contact_message" class="form-control" rows="3" placeholder="Let's get to know each other"></textarea>
+            <textarea id="contact_message" class="form-control" rows="3" required placeholder="Let's get to know each other" ng-model="contact.form.message"></textarea>
+          </div>
+          <div class="hidden form-group">
+            <label for="contact_nada">Do not fill out this field please. It's used for security purposes only and must be left blank for the form to function properly. Thanks!</label>
+            <input type="input" class="form-control" id="contact_nada" ng-model="contact.form.honeyPot">
           </div>
           <button type="submit" class="btn btn-default">Submit</button>
+          <span class="hidden">Form Invalid</span>
+          <span ng-class="contact.statusClass" class="contact__container__form__status" ng-bind="contact.statusMessage"></span>
         </form>
       </div>
     </div>

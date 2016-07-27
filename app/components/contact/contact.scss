@@ -15,7 +15,17 @@
       padding: 20px;
       margin: 50px 20px;
       border-radius: $border-radius;
-      background-color: rgba(256,256,256,1)
+      background-color: rgba(256,256,256,1);
+
+      &__status{
+        margin-left: 20px;
+        &.good{
+          color: green;
+        }
+        &.bad{
+          color: red;
+        }
+      }
     }
   }
 }
