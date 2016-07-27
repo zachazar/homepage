@@ -91,7 +91,7 @@ export default class ContactCtrl{
 
   sendMessage(message){
     //Send message using ajax
-    this.$http.post('/api/REST.php', 
+    this.$http.post('/api/REST.php/messages/', 
       $.param(message), {headers: {'Content-Type': 'application/x-www-form-urlencoded'}})
       .then(() => {
         //Success
