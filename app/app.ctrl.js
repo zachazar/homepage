@@ -1,12 +1,12 @@
 
 export default class AppCtrl{ 
-  constructor($window,$document){
+  constructor($scope,$window,$document){
     this.title = "App Parent Scope Test";
     
     //When the window loads, remove icon from splash page
-    $window.onload = function() {
+    $scope.$on('$viewContentLoaded', function(){
       $document.find('.loading-spinner').fadeOut('slow');
-    };
+    });
 
     //Find the body and set to variable
     let body = $document.find('body');
@@ -22,4 +22,4 @@ export default class AppCtrl{
   } 
 }
 
-AppCtrl.$inject=['$window','$document'];
+AppCtrl.$inject=['$scope','$window','$document'];
