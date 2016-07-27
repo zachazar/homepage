@@ -55,8 +55,10 @@ class Request
             //Validate the request
             $this->validateMessage();
         }
-        else{header('HTTP/1.1 404 Not Found');}
-
+        else
+        {
+          header('HTTP/1.1 404 Not Found');
+        }
     }
     
     function validateMessage()
@@ -66,7 +68,7 @@ class Request
             header('HTTP/1.1 400 Bad Request');
         }
         //Make sure fields aren't empty
-        if ($_POST["name"] === "" || $_POST["email"] === "" || $_POST["message"] === ""){
+        else if ($_POST["name"] === "" || $_POST["email"] === "" || $_POST["message"] === ""){
             header('HTTP/1.1 400 Bad Request');
         }
         //Check for spam words
