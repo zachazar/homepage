@@ -1,1 +1,25 @@
-<h1>Contact</h1>
+<div class="contact">
+  <h1>Contact</h1>
+  <div class="contact__container" style="background-image:url({{contact.photo}})">
+    <div class="row">
+      <div class="col-sm-6 contact__half"></div>
+      <div class="col-sm-6 contact__half">
+        <form class="contact__container__form" >
+          <div class="form-group">
+            <label for="contact_name">Name</label>
+            <input type="input" class="form-control" id="contact_name" placeholder="Name">
+          </div>
+          <div class="form-group">
+            <label for="contact_email">Email address</label>
+            <input type="email" class="form-control" id="contact_email" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <label for="contact_message">Message</label>
+            <textarea id="contact_message" class="form-control" rows="3" placeholder="Let's get to know each other"></textarea>
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
