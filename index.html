@@ -10,17 +10,40 @@
      <!-- Please-Wait splash page styling-->
     <style>
       .pg-loading-logo{
-        width: 200px;
+        width: 150px;
         vertical-align: middle;
-        
+      }
+      .pg-loading-screen .pg-loading-html{
+        margin-top: 10px;
       }
       .loading-message{
         color: white;
         font-family: Seravek, Arial, sans-serif;
-        font-size: 30px;
+        font-size: 16px;
         margin: 10px;
-        line-height: 1.42857143
+        line-height: 1.42857143;
+
       }
+      
+      @media screen and (min-width: 768px) {
+        .loading-message{
+          font-size: 24px;
+        }
+        .pg-loading-logo{
+          width: 200px;
+        }
+      }
+      @media screen and (min-width: 992px) {
+        .loading-message{
+          font-size: 30px;
+        }
+        .pg-loading-logo{
+          width: 250px;
+        }
+      }
+      
+
+
       .loading-spinner{
         position: absolute;
         margin-left: auto;
