@@ -242,7 +242,7 @@ class ResumeDataService {
         type: "project",
         name: "Homepage",
         url: "https://github.com/zachazar/homepage",
-        description: "Built a personal homepage using Angular, D3, Bootstrap, Webpack, Sass",
+        description: "Built a personal homepage (this website) using Angular, D3, Bootstrap, PHP, Webpack, Sass",
         skills:{
           1:{id:1,name:"AngularJS",val:10},
           2:{id:2,name:"Bootstrap",val:8},
@@ -260,8 +260,9 @@ class ResumeDataService {
           31:{id:31,name:"Unix",val:4},
           32:{id:32,name:"Git and SVN",val:6},
           37:{id:37,name:"Object-Oriented Design",val:6},
-          38:{id:38,name:"Responsive Web Design",val:8},
+          38:{id:38,name:"Responsive Web Design",val:7},
           39:{id:39,name:"Model-View-Controller (MVC)",val:6},
+          7:{id:7,name:"PHP",val:7}
         }
       },
       8: {
