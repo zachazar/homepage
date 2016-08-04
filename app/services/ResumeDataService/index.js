@@ -93,11 +93,11 @@ class ResumeDataService {
         type: "work",
         organization: "Lever Insights, LLC",
         location: "Seattle, WA",
-        position: "Co-founder and CTO",
+        position: "Co-Founder and Lead Engineer",
         hours: "Full-time",
         responsibilities:{
-          1: "Designed and developed a data visualization dashboard as lead software engineer",
-          2: "Built a powerful Single-Page Application using Node.js, Express, AngularJS, D3, Bootstrap, Sass"
+          1: "Designed a full-stack solution for a data visualization web application",
+          2: "Developed a Single-Page Application (SPA) prototype using Node.js, Express, AngularJS, D3, Bootstrap, Sass"
         },
         duration:{
           start: "February 2016",
@@ -140,7 +140,7 @@ class ResumeDataService {
         position: "Graduate Teaching Assistant",
         hours: "20+ hours per week",
         responsibilities:{
-          1: "Assisted professors with grading and teaching, regularly working one-on-one with students",
+          1: "Worked one-on-one with CS students while assisting professors with grading and teaching",
           2: "Classes: Web Programming, Parallel and Distributed Programming, Programming Languages, AI, etc."
         },
         duration:{
@@ -180,7 +180,7 @@ class ResumeDataService {
         position: "Software Engineer",
         hours: "Full-time",
         responsibilities:{
-          1: "Executed many Full Stack tasks such as backend server admin/security, site migrations and deployments, and testing and framework updates (PHP, Drupal, WordPress, LAMP)",
+          1: "Executed many full-stack tasks such as backend server admin/security, site migrations/deployments, and testing and framework updates (PHP, Drupal, WordPress, LAMP)",
           2: "Independently designed/implemented software for handling internal client tickets and emails (C#)"
         },
         duration:{
@@ -220,7 +220,7 @@ class ResumeDataService {
         hours: "Full-time",
         responsibilities:{
           1: "Managed infrastructure, data streaming, and software at large, data-driven conferences",
-          2: "Designed and implemented two client-facing software packages (C#)"
+          2: "Independently designed/implemented two software packages (C#) aimed to reduce wait times"
         },
         duration:{
           start: "January 2012",
