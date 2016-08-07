@@ -29,8 +29,14 @@ class Request
             $this->url_parts[$i] = isset($this->url_parts[$i]) ? $this->url_parts[$i] : "";
         }
         
-        //Create a short list of spam words o check for
-        $this->spamWords = array("sex","gucci","buy","singles","credit","loan","hidden","sale","xanax","viagra","russia","lonely");
+        //Read SpamWordList file and populate spamWords array
+        try{
+            $this->spamWords = file('./lib/SpamWordList.txt', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES );
+        }
+        catch(Exception $e){
+            error_log("An error occurred reading the SpamWordList file");
+            header('HTTP/1.1 500 Internal Server Error');
+        }
     }
     
     function processRequest()
@@ -42,7 +48,7 @@ class Request
                 break;
             default:
                 header('HTTP/1.1 405 Method Not Allowed');
-                header('Allow: GET, DELETE');
+                header('Allow: POST');
                 break;
         }
     }
